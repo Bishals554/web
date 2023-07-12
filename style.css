@@ -4,82 +4,96 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
-  }
+}
 
-  html, body {
+html,
+body {
     height: 100%;
-  }
-  
-  header {
+}
+
+header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline-block;
     margin-right: 10px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  section {
+}
+
+section {
     padding: 20px;
-  }
-  
-  #home {
+}
+
+#home {
     display: flex;
-    align-items: center;
-  }
-  
-  .intro {
+    align-items: top;
+}
+
+.intro {
     flex: 1;
     padding-right: 20px;
-  }
-  
-  .profile-pic img {
-    max-width: 300px;
+    margin-top: 0px;
+}
+
+.profile-pic img {
+    max-width: 400px;
     height: auto;
-  }
-  
-  #contact-form input,
-  #contact-form textarea {
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form {
+    max-width: 400px;
+    width: 100%;
+}
+
+#contact-form input,
+#contact-form textarea {
     display: block;
     margin-bottom: 10px;
-    width: 100%;
-  }
-  
-  footer {
+    width: 30%;
+}
+
+footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
-  }
+}
 
-  /* Change the hover color */
+/* Change the hover color */
 nav ul li a:hover {
-    color: red; /* Change to the desired hover color */
-  }
-  
-  /* Change the color of the selected index */
-  nav ul li a.active {
-    color: blue; /* Change to the desired selected index color */
-  }
+    color: red;
+    /* Change to the desired hover color */
+}
 
-  #about {
+/* Change the color of the selected index */
+nav ul li a.active {
+    color: blue;
+    /* Change to the desired selected index color */
+}
+
+#about {
     flex: 1;
-  }
-  
-  footer {
+}
+
+footer {
     margin-top: auto;
-  }
-  
+}

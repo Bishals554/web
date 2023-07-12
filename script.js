@@ -24,7 +24,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
 // Get the current page filename
 const currentPage = location.pathname.split('/').pop();
-
 // Get all navigation links
 const navLinks = document.querySelectorAll('nav ul li a');
 
