@@ -49,20 +49,11 @@ section {
 }
 
 .profile-pic img {
-    max-width: 400px;
+    align-items: top;
+    max-width: 320px;
     height: auto;
 }
 
-#contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact-form {
-    max-width: 400px;
-    width: 100%;
-}
 
 #contact-form input,
 #contact-form textarea {
