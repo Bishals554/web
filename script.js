@@ -22,18 +22,25 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   });
   
 
+// Get the current page filename
+const currentPage = location.pathname.split('/').pop();
+
 // Get all navigation links
 const navLinks = document.querySelectorAll('nav ul li a');
 
-// Iterate over each navigation link and add click event listener
+// Iterate over each navigation link and update the active state
 navLinks.forEach(link => {
-  link.addEventListener('click', (event) => {
-    const targetPage = link.getAttribute('href'); // Get target page path
+  const linkPath = link.getAttribute('href');
 
-    // If the target page is the current page, prevent default link behavior
-    if (targetPage === window.location.pathname) {
-      event.preventDefault();
-      return;
-    }
-  });
+  if (linkPath === currentPage) {
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
 });
+
+
+
+
+
+
