@@ -88,3 +88,86 @@ nav ul li a.active {
 footer {
     margin-top: auto;
 }
+
+
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+  } */
+  .container {
+    width: 250px;
+    height: 300px;
+    position: relative;
+  }
+  .container:hover .card {
+    opacity: 0.25;
+  }
+  .container:hover .card:first-child {
+    transform: rotate(-10deg);
+  }
+  #c1:hover {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  .container:hover .card:nth-child(2) {
+    transform: translateX(-70px) rotate(-20deg);
+  }
+  #c2:hover {
+    transform: rotate(0) translateX(-90px);
+    opacity: 1;
+  }
+  .container:hover .card:nth-child(3) {
+    transform: translateX(-120px) rotate(-30deg);
+  }
+  #c3:hover {
+    transform: rotate(0) translateX(-140px);
+    opacity: 1;
+  }
+  .container:hover .card:last-child {
+    transform: translateX(-180px) rotate(-40deg);
+  }
+  #c4:hover {
+    transform: rotate(0) translateX(-200px);
+    opacity: 1;
+  }
+  .card {
+    background-color: aqua;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+  }
+  .card:first-child {
+    z-index: 4;
+    background: url(assets/image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card:nth-child(2) {
+    background: url(assets/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+  .card:nth-child(3) {
+    background: url(assets/image2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  .card:last-child {
+    background: url(assets/image3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
