@@ -145,7 +145,7 @@ footer {
   }
   .card:first-child {
     z-index: 4;
-    background: url(assets/image.png);
+    background: url(assets/image.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
